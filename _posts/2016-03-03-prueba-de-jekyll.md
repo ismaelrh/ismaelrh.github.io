@@ -1,9 +1,10 @@
 ---
 layout: post
 title: ¡Hola Jekyll!
+category: Otros
 ---
 
-Tras algunos problemas con la versión de Ruby (por alguna razón no podía instalar ninguna Gema), por fin he sido capaz de instalar Jekyll en mi página de Github y las herramientas adecuadas en mi Ubuntu para poder previsualizar las páginas. 
+Tras algunos problemas con la versión de Ruby (por alguna razón no podía instalar ninguna Gema), por fin he sido capaz de instalar Jekyll en mi página de Github y las herramientas adecuadas en mi Ubuntu para poder previsualizar las páginas.
 
 Por si alguien tiene problemas, he seguido [este](http://digitaldrummerj.me/blogging-on-github-part-10-installing-jekyll-on-linux/) tutorial en Xubuntu 14.04.
 

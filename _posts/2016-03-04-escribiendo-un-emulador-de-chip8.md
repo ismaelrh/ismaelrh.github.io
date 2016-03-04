@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Escribiendo un emulador de Chip8
+category: Emuladores
 ---
 
 Entre mis inquietudes tecnológicas siempre ha estado saber cómo funciona un emulador. Cuando he usado alguno me he quedado maravillado al ver cómo reproducen juegos o programas a la perfección (o casi).
@@ -11,9 +12,9 @@ Podéis ver y usar como queráis el código fuente de mi emulador, disponible en
 
 # ¿Qué es Chip8?
 
-Vale, para empezar, Chip8 no es un sistema hardware, es un "lenguaje de programación" interpretado desarrollado para computadores de 8 bits hace 40 años que pretendía facilitar la creación de videojuegos. 
+Vale, para empezar, Chip8 no es un sistema hardware, es un "lenguaje de programación" interpretado desarrollado para computadores de 8 bits hace 40 años que pretendía facilitar la creación de videojuegos.
 Más que un lenguaje de programación es una definición básica de un procesador ficticio: sus registros, su entrada/salida, y su conjunto de instrucciones.
-Entre sus características está una pantalla de 64x32 píxeles, 16 registros de propósito general, 4KB de memoria y 16 botones de entrada. 
+Entre sus características está una pantalla de 64x32 píxeles, 16 registros de propósito general, 4KB de memoria y 16 botones de entrada.
 
 ![Ejemplo de juego](/images/emulador-chip8/screenshot.png)
 
@@ -52,7 +53,7 @@ while(true) {
     //Si han pasado 1/60s toca refrescar la pantalla y actualizar
     //registros de timer (ST y DT).
 
-    if(refreshTime){ 
+    if(refreshTime){
 
         //Si está activo el flag de dibujar, dibujamos y lo desactivamos
         if(memoryDrawFlag){
@@ -91,4 +92,3 @@ Algo que también me gustaría sería escribir un emulador de Game Boy, ya que s
 Si queréis adentraros en el mundo de la emulación, aunque sea brevemente (para decir que habéis escrito un emulador), esta es la manera. Es más, no sé cómo no se propone como trabajo en asignaturas de Hardware de la carrera de Informática, pues es muy didáctico sobre el funcionamiento de un procesador.
 
 Un saludo, Ismael.
-

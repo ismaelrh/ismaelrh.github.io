@@ -1,43 +1,324 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
-  <a class="rss-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
-  <h1 class="page-heading">Entradas</h1>
+<head>
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+  <title>Ismael Rodríguez</title>
 
-        <div class="post-excerpt">
-          {{ post.excerpt }}
-          <p>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Leer más &raquo;</a>
-          </p>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Ismael Rodríguez</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li  class="active">
+              <a href="index.html"><i class="glyphicon glyphicon-user"></i>&nbsp;About me</a>
+          </li>
+            <li>
+                <a href="projects.html"><i class="glyphicon glyphicon-briefcase"></i>&nbsp;Projects</a>
+            </li>
+
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Header -->
+
+    <img style="display: block; margin: auto;"src="http://www.gravatar.com/avatar/4de8d654bf7cffcbd7bbc18fd3bc1e34?s=150" height="150" class="img-circle" alt="ismaelrh">
+    <div class="row text-center"><h1>Ismael Rodríguez Hernández</h1></div>
+      <div class="row text-center"><h3><em>Almost</em> Computer Engineer</h3></div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">
+          <small>Personal Info</small>
+        </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <ul>
+
+        <li><strong>Name:</strong> Ismael Rodríguez Hernández</li>
+        <li><strong>Born:</strong> July 18th 1994, Girona, Spain</li>
+        <li><strong>eMail:</strong> ismaro.394 <em>at</em> gmail <em>dot</em> com</li>
+        <li><strong>Github:</strong> <a href="http://github.com/ismaro3">ismaro3</a></li>
+        <li><strong>LinkedIn:</strong> <a href="http://es.linkedin.com/in/ismaelrh">ismaro3</a></li>
+      </ul>
+
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">
+          <small>Education</small>
+
+
+        </h1>
+      </div>
+    </div>
+
+      <div class="row" style="margin-top:20px;">
+        <div class="col-xs-3">2012-July 2016</div>
+        <div class="col-xs-9">
+          <strong>Computer Science and Engineering Degree</strong> student at University of Zaragoza, Spain.
         </div>
+        </div>
+        <div class="row" style="margin-top:20px;">
+          <div class="col-xs-3">2010-2012</div>
+          <div class="col-xs-9">
+            <strong>High School diploma (A level) / Secondary School on Technologies.</strong> at IES Pirámide, Huesca, Spain.
+          </div>
+          </div>
+
+
+
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">
+              <small>Experience</small>
+
+
+            </h1>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-xs-3">Nov. 2015 - Present</div>
+          <div class="col-xs-9">Collaboration as an undergraduated student with the Distributed Information Systems Research Group (SID) at University of Zaragoza, developing and improving Infoboxer.</div>
+        </div>
+
+        <div class="row" style="margin-top:20px;">
+          <div class="col-xs-3">Nov. 2015</div>
+          <div class="col-xs-9">Finapps Party 2015 participator at Barcelona.</div>
+        </div>
+
+        <div class="row" style="margin-top:20px;">
+          <div class="col-xs-3">April 2015</div>
+          <div class="col-xs-9">Space Apps 2015 participator at Zaragoza.</div>
+        </div>
+
+        <div class="row" style="margin-top:20px;">
+          <div class="col-xs-3">Summer 2014</div>
+          <div class="col-xs-9">Internship at <a href="http://www.palbin.com">Palbin.com</a> in Web and e-Commerce development.</div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">
+              <small>Awards and Honors</small>
+
+
+            </h1>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:20px;">
+          <div class="col-xs-3">April 2016</div>
+          <div class="col-xs-9">Applied for a Wikimedia IEG Grant to transform the research prototype
+            Infoboxer into WikInfoboxer, a tool ready for Wikipedia/Wikimedia
+            editors. Pending of approval. <a href="https://meta.wikimedia.org/wiki/Grants:IEG/WikInfoboxer" target="_blank">More information</a>.
+          </div>
+          </div>
+
+          <div class="row" style="margin-top:20px;">
+            <div class="col-xs-3">October 2015</div>
+            <div class="col-xs-9">Collaboration Grant provided by Spanish “Ministerio de Educación, Cultura y
+                          Deporte” (Education, Culture and Sport Ministry) to develop a research project
+                              with the Distributed Information Systems Research Group (SID) at University
+                              of Zaragoza.
+            </div>
+            </div>
+
+            <div class="row" style="margin-top:20px;">
+              <div class="col-xs-3">April 2015</div>
+              <div class="col-xs-9">NASA Space Apps Global Nomination - Winners in Zaragoza (Spain) with
+Cropper. <a href="http://2015.spaceappschallenge.org/award/#globalnom" target="_blank">More information</a>.
+              </div>
+              </div>
+
+              <div class="row" style="margin-top:20px;">
+                <div class="col-xs-3">April 2015</div>
+                <div class="col-xs-9">
+                  NASA Space Apps Chronobook Local Award in Zaragoza (Spain).
+                </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1 class="page-header">
+                      <small>Projects</small>
+
+
+                    </h1>
+                  </div>
+                </div>
+
+                See <a href="projects.html">Projects</a> page.
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1 class="page-header">
+                      <small>Language Skills</small>
+
+
+                    </h1>
+                  </div>
+                </div>
+
+
+
+                <table class="table table-striped">
+
+                  <tr>
+                    <th>Language</th><th>Speaking</th><th>Understanding</th><th>Writing</th><th>Reading</th>
+                  </tr>
+                  <tr>
+                    <td><strong>Spanish (native)</strong></td><td>Excellent</td><td>Excellent</td><td>Excellent</td><td>Excellent</td>
+
+                  </tr>
+                  <tr>
+                    <td><strong>English (B2.2)</strong></td><td>Good</td><td>Quite good</td><td>Very good</td><td>Very good</td>
+
+                  </tr>
+                  <tr>
+                      <td><strong>Catalan</strong></td><td>Basic</td><td>Good</td><td>Basic</td><td>Good</td>
+                    </tr>
+                </table>
+
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h1 class="page-header">
+                      <small>Certificates</small>
+
+
+                    </h1>
+                  </div>
+                </div>
+
+                <div class="row" style="margin-top:20px;">
+                  <div class="col-xs-3">May 2013</div>
+                  <div class="col-xs-9">
+                    First Certificate In English - University of Cambridge
+                  </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h1 class="page-header">
+                        <small>Interests</small>
+
+
+                      </h1>
+                    </div>
+                  </div>
+
+
+                  <p>
+                    Interested in Business Intelligence, Web Services and the integration of Software Development and Engineering with the
+                    business world. Also reading about Linked Data, Semantic Web and extraction of data from large sources of knowledge.
+                    Training on Front-end and Back-end development, mobile application development, Software Engineering and IT Security.
+                    I would like
+                  to make contact with people from different cultures as well.
+                  Love free software.
+
+                  </p>
+
+          <!-- /.row -->
+
+          <hr>
+
+          <!-- Pagination -->
+          <!--<div class="row text-center">
+          <div class="col-lg-12">
+          <ul class="pagination">
+          <li>
+          <a href="#">&laquo;</a>
+        </li>
+        <li class="active">
+        <a href="#">1</a>
       </li>
-    {% endfor %}
-  </ul>
-
-  <!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">ANTERIOR</a>
-  {% else %}
-    <span class="previous">ANTERIOR</span>
-  {% endif %}
-  <span class="page_number ">{{ paginator.page }} de {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">NEXT</a>
-  {% else %}
-    <span class="next ">SIGUIENTE</span>
-  {% endif %}
+      <li>
+      <a href="#">2</a>
+    </li>
+    <li>
+    <a href="#">3</a>
+  </li>
+  <li>
+  <a href="#">4</a>
+</li>
+<li>
+<a href="#">5</a>
+</li>
+<li>
+<a href="#">&raquo;</a>
+</li>
+</ul>
 </div>
+</div>-->
+<!-- /.row -->
+
+<!--  <hr> -->
+
+<!-- Footer -->
+<footer>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>Copyright &copy; Ismael Rodríguez 2016</p>
+    </div>
+  </div>
+  <!-- /.row -->
+</footer>
 
 </div>
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
